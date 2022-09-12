@@ -1,0 +1,60 @@
+.hero {
+    padding: 64px 16px 88px 16px;
+    text-align: center;
+
+    &__image-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__image {
+        box-sizing: content-box;
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        border: 16px solid #F6F9FD;
+    }
+
+    &__speech-bubble {
+        display: none;
+    }
+
+    &__description-container {
+        line-height: 32px;
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 26px;
+        color: $textDark;  
+    }
+
+    &__special {
+        color: $blue;
+    }
+
+    &__paragraph {
+        font-weight: 300;
+        font-size: 16px;
+        margin-bottom: 44px;
+    }
+
+    &__link {
+        font-weight: 700;
+        color: $textLink;
+        text-decoration: none;
+    }
+
+    &__mail {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 40px;
+        display: inline-block;
+        text-decoration: none;
+        padding: 4px 24px;
+        color: #fff;
+        background: $textLink;
+        border-radius: 64px;
+    }
+}
