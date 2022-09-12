@@ -1,21 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Piotr Lewczyk - Portfolio</title>
-    <meta name="description" content="My homepage with skills, projects and contact" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="" />
-    
-  </head>
-  <body>
-    <p>hello world</p>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piotr Lewczyk - portfolio</title>
+  <meta name="description" content="My skills, projects and links to contact me" />
+  <!-- Title -->
+  <meta property="og:title" content="Piotr Lewczyk - portfolio" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="My skills, projects and links to contact me" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="https://lewpiotr1701.github.io" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="" />
+
+</head>
+
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero__image-container">
+        <img class="hero__image" width="100px" height="120px" src="../assets/img/profile_picture_cv.jpg"
+          alt="Piotr's photo">
+        <span class="hero__speech-bubble">It's all good, man! 👉 👉</span>
+      </div>
+      <div class="hero__description">
+        <h1 class="hero__header">
+          My name is Maciej and I'm an aspiring
+          <span class="hero__special">Frontend developer</span>
+          and a keen Star Wars fan.
+        </h1>
+        <p class="hero__paragraph">
+          You might be interested in checking the list of my <a class="hero__link" href="#skills">skills</a>.
+          Don't forget to have a glimpse at <a class="hero__link" href="#projects">my projects</a>.
+          Currently I'm looking for a new challenges so if you have one - <a class="hero__link" href="#contact">contact me 😊</a>
+        </p>
+      </div>
+      <a class="hero__mail" href="mailto:lewczykpiotr@gmail.com">lewczykpiotr@gmail.com</a>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2 class="skills__header">My skills</h2>
+      <article class="skills-section">
+          <span class="skills-section__emoji">💪</span>
+          <h3 class="skills-section__header">Working knowledge</h3>
+          <ul class="skills-list">
+            <li class="skills-list__item">Semantic HTML5</li>
+            <li class="skills-list__item">Flexbox</li>
+            <li class="skills-list__item">Markdown</li>
+            <li class="skills-list__item">JS: Local storage</li>
+            <li class="skills-list__item">Figma</li>
+            <li class="skills-list__item">CSS grid</li>
+            <li class="skills-list__item">Forms</li>
+            <li class="skills-list__item">JS: DOM manipulations</li>
+            <li class="skills-list__item">SASS</li>
+          </ul>
+      </article>
+      <article class="skills-section">
+        <span class="skills-section__emoji">🤔</span>
+        <h3 class="skills-section__header">Know something about</h3>
+        <ul class="skills-list">
+          <li class="skills-list__item">JavaScript ES6 + features</li>
+          <li class="skills-list__item">CSS animations</li>
+          <li class="skills-list__item">Working with API</li>
+          <li class="skills-list__item">NPM Scripts</li>
+          <li class="skills-list__item">Progressive web apps</li>
+          <li class="skills-list__item">Git</li>
+          <li class="skills-list__item">Accessibility</li>
+        </ul>
+      </article>
+      <article class="skills-section">
+      <span class="skills-section__emoji">🎓</span>
+      <h3 class="skills-section__header">Want to learn</h3>
+      <ul class="skills-list">
+        <li class="skills-list__item">React JS</li>
+        <li class="skills-list__item">Node JS</li>
+        <li class="skills-list__item">Electron</li>
+        <li class="skills-list__item">Server side rendering</li>
+        <li class="skills-list__item">Typescript</li>
+        <li class="skills-list__item">Gatsby</li>
+        <li class="skills-list__item">Websockets</li>
+      </ul>
+      </article>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="projects__header">Recent projects</h2>
+      <p class="projects__paragraph">
+        I started my frontend developer path in 2003. Since then, I've built some projects.
+        Here's the list of the things I've done so far.
+      </p>
+      <div class="projects-container">
+        <article class="project">
+          <h3 class="project_title">
+            <span>project:</span>
+            <span>podlaski git</span>
+          </h3>
+          <p>
+            <span>description:</span>
+            <span>podlaskie aliasy dla gitowych komend</span>
+          </p>
+          <p>
+            <span>demo:</span>
+            <span>
+              &lt;<a href="#" title="podlaski git - demo">see here</a>&gt;
+            </span>
+          </p>
+          <p>
+            <span>github:</span>
+            <span>
+              &lt;<a href="#" title="podlaski git - source code">source code</a>&gt;
+            </span>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="contact__header">Contact me</h2>
+      <p class="contact__paragraph">
+        I'm open for new opportunities.
+        If you have one for me we should talk!
+      </p>
+      <div class="contact__links">
+        <ul class="socials">
+          <li class="socials__item">
+            <a class="socials__link" href="https://github.com/lewpiotr1701">
+              <img class="socials__icon" alt="Piotr's github">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="">
+              <img class="socials__icon" alt="Piotr's instagram">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="">
+              <img class="socials__icon" alt="Piotr's facebook">
+            </a>
+          </li>
+        </ul>
+
+        <a class="contact__mail" href="mailto:lewczykpiotr@gmail.com">lewczykpiotr@gmail.com</a>
+      </div>
+    </section>
+
+  </main>
+</body>
+
 </html>
