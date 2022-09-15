@@ -43,7 +43,7 @@
     padding: 0;
 
     &__item {
-        padding: 0 0 0 24px;;
+        padding: 0 0 0 24px;
         margin-bottom: 9px;
         position: relative;
 
@@ -56,16 +56,18 @@
             width: 12px;
             height: 9px;
             background: url('../assets/img/small-tick-green.svg');
+
             .skills-list--blue & {
                 background: url('../assets/img/small-tick-blue.svg');
             }
-        .skills-list--dot & {
-            width: 2px;
-            height: 2px;
-            border-radius: 50%;
-            top: 10px;
-            left: 5px;
-            background: $blueLight;
+
+            .skills-list--dot & {
+                width: 2px;
+                height: 2px;
+                border-radius: 50%;
+                top: 10px;
+                left: 5px;
+                background: $blueLight;
             }
         }
     }

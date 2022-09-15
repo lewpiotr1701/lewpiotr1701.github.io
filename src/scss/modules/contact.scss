@@ -1,0 +1,63 @@
+.contact {
+    padding: 64px 16px 88px 16px;
+    background-color: $blueLight;
+
+    &__header {
+        color: $textDark;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+        margin: 0 0 32px 0;
+    }
+
+    &__paragraph {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+        margin: 0 0 56px 0;
+    }
+
+    &__links {
+        text-align: center;
+    }
+
+    &__mail {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 40px;
+        display: inline-block;
+        width: 280px;
+        text-decoration: none;
+        padding: 4px 24px;
+        color: #fff;
+        background: $textLink;
+        border-radius: 64px;
+        margin-top: 68px;
+    }
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        margin: 0 12px;
+    }
+
+    &__link {
+        padding: 0;
+        width: 48px;
+        height: 48px;
+        background: #fff;
+        box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+}
