@@ -9,9 +9,22 @@
         line-height: 48px;
         text-align: center;
         margin: 0 0 64px 0;
+        @media (min-width: $desktop) {
+            font-size: 48px;
+            line-height: 56px;
+        }
     }
 }
 
+.skills-grid {
+    @media (min-width: $desktop) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1184px;
+        margin: 0 auto;
+    }
+}
+    
 .skills-section {
     margin-top: 64px;
     margin-bottom: 64px;
@@ -47,7 +60,7 @@
         margin-bottom: 9px;
         position: relative;
 
-        &:before {
+        &::before {
             position: absolute;
             left: 0;
             top: 7px;

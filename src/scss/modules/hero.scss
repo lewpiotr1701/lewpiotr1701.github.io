@@ -5,6 +5,11 @@
         max-width: 768px;
         margin: 0 auto;
     }
+    
+    @media (min-width: $desktop) {
+        max-width: 100%;
+
+    }
 
     &__image-container {
         display: flex;
@@ -45,7 +50,7 @@
             line-height: 40px;
             position: relative;
 
-            &:after {
+            &::after {
                 content: '';
                 display: block;
                 width: 17.42px;
@@ -62,6 +67,28 @@
         line-height: 32px;
         @media (min-width: $desktop) {
             line-height: 40px;
+            max-width: 786px;
+            margin: 0 auto;
+            position: relative;
+            
+            &::before, &::after {
+                width: 83.23px;
+                height: 254.88px;
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+            }
+
+            &::before {
+                background: url('../assets/img/{.svg');
+                right: 100%;
+            }
+
+            &::after {
+                background: url('../assets/img/}.svg');
+                left: 100%;
+            }
         }
     }
 
@@ -76,6 +103,7 @@
 
     &__special {
         color: $blue;
+        white-space: nowrap;
     }
 
     &__paragraph {
