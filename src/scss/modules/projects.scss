@@ -19,7 +19,14 @@
     }
 }
 
-.projects-container {}
+.projects-grid {
+    display: grid;
+    column-gap: 24px;
+    row-gap: 24px;
+    @media (min-width: $tablet) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 .project {
     background: $grey2;
