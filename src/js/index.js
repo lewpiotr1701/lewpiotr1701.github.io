@@ -12,7 +12,7 @@ fetch('https://api.github.com/users/lewpiotr1701/repos?sort=created&direction=de
 
             let newName = name;
             if (name == 'lewpiotr1701.github.io') {
-                newName = 'homepage';
+                newName = 'portfolio';
             }
 
             const template = `<article class="project">
