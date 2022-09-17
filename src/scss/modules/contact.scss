@@ -2,6 +2,10 @@
     padding: 64px 16px 88px 16px;
     background-color: $blueLight;
 
+    @media (min-width: $desktop) {
+        padding: 80px 16px 176px 16px;
+    }
+
     &__header {
         color: $textDark;
         font-weight: 700;
@@ -9,6 +13,12 @@
         line-height: 48px;
         text-align: center;
         margin: 0 0 32px 0;
+
+        @media (min-width: $desktop) {
+            font-size: 48px;
+            line-height: 56px;
+            margin: 0 0 40px 0;
+        }
     }
 
     &__paragraph {
@@ -17,10 +27,25 @@
         line-height: 32px;
         text-align: center;
         margin: 0 0 56px 0;
+
+        @media (min-width: $desktop) {
+            font-size: 20px;
+            line-height: 40px;
+            margin: 0 0 128px 0;
+        }
     }
 
     &__links {
         text-align: center;
+
+        @media (min-width: $desktop) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 580px;
+            margin: 0 auto;
+        }
     }
 
     &__mail {
@@ -35,6 +60,10 @@
         background: $textLink;
         border-radius: 64px;
         margin-top: 68px;
+
+        @media (min-width: $desktop) {
+            margin: 0;
+        }
     }
 }
 

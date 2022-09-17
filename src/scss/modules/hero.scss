@@ -1,14 +1,15 @@
 .hero {
     padding: 64px 16px 88px 16px;
     text-align: center;
+
     @media (min-width: $tablet) {
         max-width: 768px;
         margin: 0 auto;
     }
-    
+
     @media (min-width: $desktop) {
         max-width: 100%;
-
+        padding: 80px 16px 176px 16px;
     }
 
     &__image-container {
@@ -24,6 +25,7 @@
         height: 96px;
         border-radius: 50%;
         border: 16px solid #F6F9FD;
+
         @media (min-width: $desktop) {
             width: 178px;
             height: 178px;
@@ -39,6 +41,7 @@
 
     &__hello {
         display: none;
+
         @media (min-width: $desktop) {
             display: block;
             background: $blue;
@@ -65,13 +68,15 @@
 
     &__description-container {
         line-height: 32px;
+
         @media (min-width: $desktop) {
             line-height: 40px;
             max-width: 786px;
             margin: 0 auto;
             position: relative;
-            
-            &::before, &::after {
+
+            &::before,
+            &::after {
                 width: 83.23px;
                 height: 254.88px;
                 content: '';
@@ -96,8 +101,14 @@
         font-weight: 700;
         font-size: 26px;
         color: $textDark;
+        margin-top: 40px;
+        margin-bottom: 16px;
+
         @media (min-width: $desktop) {
             font-size: 32px;
+            line-height: 40px;
+            margin-top: 72px;
+            margin-bottom: 24px;
         }
     }
 
@@ -109,9 +120,13 @@
     &__paragraph {
         font-weight: 300;
         font-size: 16px;
-        margin-bottom: 44px;
+        margin-top: 0;
+        margin-bottom: 48px;
+
         @media (min-width: $desktop) {
             font-size: 20px;
+            line-height: 40px;
+            margin-bottom: 68px;
         }
     }
 

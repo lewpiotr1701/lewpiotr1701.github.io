@@ -4,11 +4,16 @@
     color: #fff;
     font-weight: 700;
 
+    @media (min-width: $desktop) {
+        padding: 80px 16px 176px 16px;
+    }
+
     &__header {
         font-size: 36px;
         line-height: 48px;
         text-align: center;
-        margin: 0 0 64px 0;
+        margin: 0;
+
         @media (min-width: $desktop) {
             font-size: 48px;
             line-height: 56px;
@@ -24,10 +29,13 @@
         margin: 0 auto;
     }
 }
-    
+
 .skills-section {
     margin-top: 64px;
-    margin-bottom: 64px;
+
+    @media (min-width: $desktop) {
+        margin-top: 128px;
+    }
 
     &__emoji {
         font-size: 64px;
