@@ -7,15 +7,11 @@ fetch('https://api.github.com/users/lewpiotr1701/repos?sort=created&direction=de
   .then(response => {
     const projectsGrid = document.querySelector('.projects-grid--js');
     for (let repository of response) {
-        if (repository["homepage"]) {
-            const {name, html_url, description, homepage} = repository;
+      let { name, html_url, description, homepage } = repository;
 
-            let newName = name;
-            if (name == 'lewpiotr1701.github.io') {
-                newName = 'portfolio';
-            }
+      if (name == 'lewpiotr1701.github.io') name = 'portfolio';
 
-            const template = `<article class="project">
+      const template = `<article class="project">
       <div class="project__upper-frame">
         <span class="project__upper-frame--circle"></span>
         <span class="project__upper-frame--circle"></span>
@@ -25,7 +21,7 @@ fetch('https://api.github.com/users/lewpiotr1701/repos?sort=created&direction=de
         <img src="img/github-icon-dark.svg" alt="">
         <h3 class="project__grid project__title">
           <span class="project__label">project:</span>
-          <span>${newName}</span>
+          <span>${name}</span>
         </h3>
         <p class="project__grid project__grid--description">
           <span class="project__label">description:</span>
@@ -34,7 +30,7 @@ fetch('https://api.github.com/users/lewpiotr1701/repos?sort=created&direction=de
         <p class="project__grid">
           <span class="project__label">demo:</span>
           <span>
-            &lt;<a class="project__link" href="${homepage}" title="${newName} - demo" target="_blank" rel="noopener noreferrer">
+            &lt;<a class="project__link" href="${homepage}" title="${name} - demo" target="_blank" rel="noopener noreferrer">
                     see here
                 </a>&gt;
           </span>
@@ -42,7 +38,7 @@ fetch('https://api.github.com/users/lewpiotr1701/repos?sort=created&direction=de
         <p class="project__grid">
           <span class="project__label">github:</span>
           <span>
-            &lt;<a class="project__link" href="${html_url}" title="${newName} - source code" target="_blank" rel="noopener noreferrer">
+            &lt;<a class="project__link" href="${html_url}" title="${name} - source code" target="_blank" rel="noopener noreferrer">
                     source code
                 </a>&gt;
           </span>
@@ -51,8 +47,8 @@ fetch('https://api.github.com/users/lewpiotr1701/repos?sort=created&direction=de
       </article>`;
       projectsGrid.innerHTML += template;
     }
-        }
-})
+
+  })
   .catch(error => {
-  console.log(error);
-})
+    console.log(error);
+  })
