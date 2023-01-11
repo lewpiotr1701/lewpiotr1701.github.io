@@ -9,7 +9,8 @@ fetch('https://api.github.com/users/lewpiotr1701/repos?sort=created&direction=de
     for (let repository of response) {
       let { name, html_url, description, homepage } = repository;
 
-      if (name == 'lewpiotr1701.github.io') name = 'portfolio';
+      if (name === 'lewpiotr1701.github.io') name = 'portfolio';
+      if (homepage === null) homepage = '#';
 
       const template = `<article class="project">
       <div class="project__upper-frame">
